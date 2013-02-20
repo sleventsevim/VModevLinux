@@ -1,3 +1,4 @@
+(function() {
 var bkm_url=prompt("URL:", "http://");
 var bkm_filename=prompt("File:", "");
 if (bkm_url!=null) {
@@ -5,3 +6,4 @@ if (bkm_url!=null) {
         var bkm_nw=window.open(bkm_url, bkm_filename+".pdf", "width=200,height=50");
     }
 }
+})();
