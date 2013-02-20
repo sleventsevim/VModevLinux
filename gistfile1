@@ -1,9 +1,8 @@
 (function() {
-var bkm_url=prompt("URL:", "http://");
-var bkm_filename=prompt("File:", "");
-if (bkm_url!=null && bkm_filename != null) {
+var bkm_letter=prompt("File:", "");
+if (bkm_letter != null) {
     if (typeof(bkm_nw)=="undefined"||bkm_nw.closed){
-        var bkm_nw=window.open(bkm_url, bkm_filename+".pdf", "width=200,height=50,filename="+bkm_filename+".pdf");
+        var bkm_nw=window.open("http://localhost:8000/generate/pdf/notes/initial-"+bkm_letter+"/", bkm_letter+".pdf", "width=200,height=50,filename="+bkm_letter+".pdf");
     }
 }
 })();
